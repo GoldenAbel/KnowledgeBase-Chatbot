@@ -85,6 +85,14 @@ etc.
 
 # Tested System Configuration & Warnings
 
+This code has been throughly tested and anny benchmarks provided are from the following configuration:
+
+* CPU: Intel i7 4790 - (8 hyperthreaded cores)
+* 32 GB Kingston HyperX Fury RAM
+* 128 GB SSD
+* Nvidia GeForce 970 GTX
+* CUDA v7.5
+* CuDNN v5005
 
 This is a CPU-optimized version. In further versions, GPU optimization functionality would be added.
 

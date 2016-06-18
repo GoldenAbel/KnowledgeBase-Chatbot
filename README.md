@@ -6,13 +6,21 @@ Knowledge based chatbot for movies made using various deep-learning modules.
 
 This code is written in python. It uses the following dependencies: 
 
-* Scikit-learn: pip install scikit-learn --user
-* NumPy       :	$.pip install numpy --user
-* H5Py        :	$.pip install h5py --user
-* SciPy       :	$.sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-* Theano      :	$.pip install theano --user 
-* NLTK v3     :	$.pip install nltk --user
-* NLTK Data   :	As per written in at **http://www.nltk.org/data.html**
+* Scikit-learn
+	pip install scikit-learn --user
+* NumPy       
+	$.pip install numpy --user
+* H5Py        
+	$.pip install h5py --user
+* SciPy       
+	$.sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+* Theano      
+	$.pip install theano --user 
+* NLTK v3     
+	$.pip install nltk --user
+* NLTK Data   
+
+As per written in at **http://www.nltk.org/data.html**
 
 # System Requirements
 
@@ -24,7 +32,9 @@ This is a CPU-optimized version. If further required, GPU optimization functiona
 
 # Getting started
 
-Step 1) 
+Step 1
+------ 
+
 1.1) Download the data from this google drive link:
 
 1.2) Unzip the data to get the Data/ folder.
@@ -33,7 +43,10 @@ Step 1)
 
 1.4) Place contents from Data/src/data/ to ./src/data
 
-Step 2) Install the dependencies given before.
+Step 2
+------
+
+Install the dependencies given before.
 
 Voila! Chatbot is ready to kick-ass!
 

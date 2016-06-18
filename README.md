@@ -24,14 +24,6 @@ NLTK data can be installed as per written in at **http://www.nltk.org/data.html*
 	$.pip install nltk --user
 
 
-# System Requirements
-
-This is a CPU-optimized version. If further required, GPU optimization functionality would be added.
-
-[*Warning*] This consumes a lot of RAM space. RAM >= 32GB is recommended for running this system due to the large databases present.
-
-[*warning*] This consumes high amount of disk space too. Please ensure you have atleast 50GB data space available on your hard-disk.
-
 # Getting started
 
 Step 1
@@ -90,3 +82,16 @@ To stop the system simply exit from the bash terminal.
 	Enter the query: $. 
 	
 etc.
+
+# Tested System Configuration & Warnings
+
+
+This is a CPU-optimized version. In further versions, GPU optimization functionality would be added.
+
+[*Warning*] This consumes a lot of RAM space. 
+
+RAM >= 32GB is recommended for running this system due to the large databases present.
+
+[*warning*] This consumes high amount of disk space too. 
+
+Please ensure you have atleast 50GB data space available on your hard-disk.

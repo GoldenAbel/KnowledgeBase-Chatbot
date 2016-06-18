@@ -7,20 +7,21 @@ Knowledge based chatbot for movies made using various deep-learning modules.
 This code is written in python. It uses the following dependencies: 
 
 * Scikit-learn
-	pip install scikit-learn --user
-* NumPy       
-	$.pip install numpy --user
-* H5Py        
-	$.pip install h5py --user
-* SciPy       
-	$.sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-* Theano      
-	$.pip install theano --user 
-* NLTK v3     
-	$.pip install nltk --user
-* NLTK Data   
+* NumPy
+* H5Py 
+* SciPy
+* Theano
+* NLTK v3 
+* NLTK Data 
 
-As per written in at **http://www.nltk.org/data.html**
+	$.pip install scikit-learn --user  
+	$.pip install numpy --user
+	$.pip install h5py --user
+	$.sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+	$.pip install theano --user 
+	$.pip install nltk --user
+
+NLTK data can be installed as per written in at **http://www.nltk.org/data.html**
 
 # System Requirements
 

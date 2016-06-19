@@ -54,6 +54,25 @@ Please do kindly wait for 5-10 minutes for the libraries to initialize the engin
 
 To stop the system simply exit from the bash terminal.
 
+# Tested System Configurations & Constraints
+
+This code has been throughly tested and anny benchmarks provided are from the following configuration:
+
+* CPU: Intel i7 4790 - (8 hyperthreaded cores)
+* RAM: 32 GB Kingston HyperX Fury RAM
+* SSD: 128 GB SSD 
+* GPU: Nvidia GeForce 970 GTX
+* Vcc: CUDA v7.5
+* Vcf: CuDNN v5005
+
+This is a CPU-optimized version. In further releases, GPU optimization functionality would be added.
+
+[*Warnings*] 
+
+1). High Space Consumption: Please ensure you have atleast 50GB data space available on your hard-disk.
+
+2). High RAM Consumption: RAM >= 32GB is required for running this system(Large databases are present).
+
 # Sample testrun
 
 	$.bash chatbot.sh 
@@ -82,24 +101,3 @@ To stop the system simply exit from the bash terminal.
 	Enter the query: $. 
 	
 etc.
-
-# Tested System Configuration & Warnings
-
-This code has been throughly tested and anny benchmarks provided are from the following configuration:
-
-* CPU: Intel i7 4790 - (8 hyperthreaded cores)
-* 32 GB Kingston HyperX Fury RAM
-* 128 GB SSD
-* Nvidia GeForce 970 GTX
-* CUDA v7.5
-* CuDNN v5005
-
-This is a CPU-optimized version. In further versions, GPU optimization functionality would be added.
-
-[*Warning*] This consumes a lot of RAM space. 
-
-RAM >= 32GB is recommended for running this system due to the large databases present.
-
-[*warning*] This consumes high amount of disk space too. 
-
-Please ensure you have atleast 50GB data space available on your hard-disk.

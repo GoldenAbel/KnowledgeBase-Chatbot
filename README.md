@@ -33,7 +33,7 @@ Step 1
 
 1.2) Unzip the data to get the Data/ folder.
 
-1.3) Place contents from Data/src/data/ to ./src/code
+1.3) Place contents from Data/src/data/ to ./src/data/
 
 1.4) Place contents from Data/src/synopsis/ to ./src/synopsis/
 
@@ -51,22 +51,22 @@ Voila! Chatbot is ready to kick-ass!
 Working of the chatbot system
 ------------------------------
 
-The main chatbot script starts the chatbot. The chatbot reads the sentence from the file input_*moviename*_*reddit/synopsis*.txt and stores the nouns present in the file into nouns_query_*moviename*_*reddit/synopsis*.txt and output is written in output_*moviename*_*reddit/synopsis*.
+The main chatbot script starts the chatbot. The chatbot reads the sentence from the file input-*moviename*-*reddit/synopsis*.txt and stores the nouns present in the file into nouns-query-*moviename*-*reddit/synopsis*.txt and output is written in output-*moviename*-*reddit/synopsis*.txt .
 
 Integration with any existing system
 ------------------------------------
 
-We use the interfacing script - run_*reddit/synopsis*.py stored in the src/(reddit or synopsis)/ sections. We first import the wrapper:
+We use the interfacing script - run-*reddit/synopsis*.py stored in the src/(reddit or synopsis)/ sections. We first import the wrapper:
 
-	$.import wrapper_reddit as w
+	$.import wrapper-reddit as w
 
 It contains 2 commands :- 
 
 1) Getmovie - It is to write be given the movie name as the input. The movie name should be case-sensitive according to what is written in the list file.
 
-2) Query - To give it a query, we type in the string of the query to this module.  Put a time wait of 2 seconds and then read the output from the output_*moviename*_*reddit/synopsis*.txt file. 
+2) Query - To give it a query, we type in the string of the query to this module.  Put a time wait of 2 seconds and then read the output from the output-*moviename*-*reddit/synopsis*.txt file. 
 
-	$.import wrapper_reddit as w
+	$.import wrapper-reddit as w
 	$.
 	$.w.getmovie('hobbit')
 	$.w.query('peter parker was a bullied a lot in the start.')

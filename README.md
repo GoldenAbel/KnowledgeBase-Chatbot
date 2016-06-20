@@ -101,6 +101,7 @@ This gives the re-ranked outputs!
 # Input formats
 
 Reddit input files should have Message<tab>Reply format and should be named out_*moviename*.tsv
+
 Synopsis should have 1 sentence per line and should be named synout_*moviename*.txt
 
 # Training the files

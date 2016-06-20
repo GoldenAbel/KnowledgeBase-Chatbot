@@ -33,9 +33,11 @@ Step 1
 
 1.2) Unzip the data to get the Data/ folder.
 
-1.3) Place contents from Data/src/code/ to ./src/code
+1.3) Place contents from Data/src/data/ to ./src/code
 
-1.4) Place contents from Data/src/data/ to ./src/data
+1.4) Place contents from Data/src/synopsis/ to ./src/synopsis/
+
+1.5) Place contents from Data/src/reddit/ to ./src/reddit/
 
 Step 2
 ------
@@ -44,9 +46,38 @@ Install the dependencies given before.
 
 Voila! Chatbot is ready to kick-ass!
 
-# Running the chatbot system
+# Integrating the chatbot system with anything
 
+Working of the chatbot system
+------------------------------
+
+The main chatbot script starts the chatbot. The chatbot reads the sentence from the file input_*moviename*_*reddit/synopsis*.txt and stores the nouns present in the file into nouns_query_*moviename*_*reddit/synopsis*.txt and output is written in output_*moviename*_*reddit/synopsis*.
+
+Integration with any existing system
+------------------------------------
+
+We use the interfacing script - run_*reddit/synopsis*.py stored in the src/(reddit or synopsis)/ sections. We first import the wrapper:
+
+	$.import wrapper_reddit as w
+
+It contains 2 commands :- 
+
+1) Getmovie - It is to write be given the movie name as the input. The movie name should be case-sensitive according to what is written in the list file.
+
+2) Query - To give it a query, we type in the string of the query to this module.  Put a time wait of 2 seconds and then read the output from the output_*moviename*_*reddit/synopsis*.txt file. 
+
+	$.import wrapper_reddit as w
+	$.
+	$.w.getmovie('hobbit')
+	$.w.query('peter parker was a bullied a lot in the start.')
+
+
+To start the system for any movie,
+
+Step 1:
 	$.bash chatbot.sh
+
+Then you are ready for I/O!
 
 Then follow instructions given in the bash script thereafter.
 
@@ -101,3 +132,37 @@ This is a CPU-optimized version. In further releases, GPU optimization functiona
 	Enter the query: $. 
 	
 etc.
+
+$.bash chatbot.sh 
+Welcome to ChatBot System!
+Which system would you like to start?
+Press 1 to start Reddit based system
+Press 2 to start Synopsis based system
+2
+Initializing ChatBot Release1- Movie: Harry Potter Version: Synopsis
+Initializing... (Optimization might take some time, please wait)
+
+Question: the plot of deathly hallows was flawed
+Reply rank #1: This knowledge of Voldemort and the curse that killed his parents will become a crucial aspect of Harry’s character and a large part of his determination to face Voldemort later in the book.
+Reply rank #2: Although Rowling does not describe the Dursleys in truly malevolent terms – as she will later with Voldemort – their closed-mindedness and insistence on appearing “normal” are all expressed as negative characteristics.
+Reply rank #3: There is no question of the evil of the mysterious hooded figure since only the most depraved dark wizard would be willing to murder a pure unicorn for the sake of its blood.
+Reply rank #4: In classic literary tradition, the hero of such a narrative would have remarkable powers and skills.
+Reply rank #5: Dumbledore explains that the Mirror of Erised reveals the deepest desires of a person’s heart but cannot give truth or knowledge.
+Reply rank #6: Because of Harry’s fame in the wizarding world for removing Voldemort from power, there was the possibility that he would become egocentric and arrogant as a wizard and as a man.
+Reply rank #7: This one fulfilled desire serves as the catalyst to the events that unfold during the rest of the book.
+Reply rank #8: Their neglect and cruelty toward him was not simply personal hatred for him, but rather hatred for his parents and what their life represented.
+Reply rank #9: Nicolas Flamel and Dumbledore had decided to destroy the Stone to ensure that it could never be used by a dark wizard.
+Reply rank #10: The caricatured aspect of the characters thus helps us read the story as a myth.
+
+Question: harry can speak parseltongue. why is it
+Reply rank #1: Maybe its because Im a fan but I believe deep down hes a good guy Throughout his life Lily brought the good out in him If it werent for her if it werent for her death I think he certainly would have stayed a Death Eater.
+Reply rank #2: Mcgonaggal says that aurors have to complete at least three more years of training and Im sure other.
+Reply rank #3: I was sort of surprised too Then I remembered that Bill is supposed to be smokin hot and can pull Fleur so it sort of made sense then.
+Reply rank #4: 29 POINTS TO GRYFFINDOR.
+Reply rank #5: Krister Henriksson the guy who reads Harry Potter for audio books in Swedish is apeshit nuts I tell you I sometimes fell asleep but after seconds I woke up to his hysterical shouting and exaggeration for effect all the time.
+Reply rank #6: Ships which are.
+Reply rank #7: No it wasnt that is why there is a malformed voldemort in purgatoryhe killed his soul when he attacked harry.
+Reply rank #8: and of course check out the rest of rHPfanfiction .
+Reply rank #9: Yes So much power in that quote.
+Reply rank #10: Oh man hed be awesome too.
+

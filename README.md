@@ -56,7 +56,7 @@ The main chatbot script starts the chatbot. The chatbot reads the sentence from 
 Integration with any existing system
 ------------------------------------
 
-We use the interfacing script - run-*reddit/synopsis*.py stored in the src/(reddit or synopsis)/ sections. We first import the wrapper:
+We use the interfacing script - run-*reddit/synopsis*.py stored in the src/(reddit or synopsis)/ sections. Further, we explain the workings of the script. We first import the wrapper:
 
 	$.import wrapper-reddit as w
 
@@ -76,7 +76,7 @@ To start the system for any movie,
 
 Step 1:
 
-	$.bash chatbot.sh
+	$. bash chatbot.sh
 
 Then you are ready for I/O!
 
@@ -86,7 +86,30 @@ Please do kindly wait for 5-10 minutes for the libraries to initialize the engin
 
 To stop the system simply exit from the bash terminal.
 
-# Tested System Configurations & Constraints
+To run the script given by kr run this once, 
+
+	$. g++ -std=c++11 filter.cpp
+
+This generates the ./a.out file. 
+Then, to rerank the outputs, run
+
+	$. ./a.out nouns-query-*moviename*-*synopsis/reddit*.txt output-*moviename*-*synopsis/reddit*.txt *filecontainingcharacters*.txt input-*moviename*-*synopsis/reddit*.txt
+
+This gives the re-ranked outputs!
+
+## Training
+# Input formats
+
+Reddit input files should have Message<tab>Reply format and should be named out_*moviename*.tsv
+Synopsis should have 1 sentence per line and should be named synout_*moviename*.txt
+
+# Training
+
+To train the system, simply go to
+
+	$. bash train.sh
+
+## Tested System Configurations & Constraints
 
 This code has been throughly tested and anny benchmarks provided are from the following configuration:
 

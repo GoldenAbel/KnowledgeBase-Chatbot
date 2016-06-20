@@ -97,13 +97,13 @@ Then, to rerank the outputs, run
 
 This gives the re-ranked outputs!
 
-## Training
+# Training
 # Input formats
 
 Reddit input files should have Message<tab>Reply format and should be named out_*moviename*.tsv
 Synopsis should have 1 sentence per line and should be named synout_*moviename*.txt
 
-# Training
+# Training the files
 
 To train the system, simply go to
 

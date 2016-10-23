@@ -1,4 +1,4 @@
-# Doha_Internship
+#Knowledge Base Chatbot
 
 Knowledge based chatbot for movies made using various deep-learning modules.
 
